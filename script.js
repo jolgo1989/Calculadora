@@ -7,7 +7,7 @@ let div = 0;
 const realizarOperacion = () => {
     let solicitud = "";
 
-    while (solicitud !== 'salir') {
+    do {
         let num1 = parseFloat(prompt('Ingrese primer número'));
         let num2 = parseFloat(prompt('Ingrese segundo número'));
         let operacion = prompt('Escriba la operación que desea realizar (multiplicación, división, resta, suma)');
@@ -33,7 +33,12 @@ const realizarOperacion = () => {
         }
 
         solicitud = prompt('Escriba "salir" para finalizar o presione cualquier tecla para continuar');
+
+    } while (solicitud !== 'salir') {
+        alert('Gracias por hacer uso de nuestra calculadora Talento Tech')
     }
+
 }
+
 
 realizarOperacion();
